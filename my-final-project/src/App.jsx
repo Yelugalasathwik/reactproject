@@ -17,6 +17,7 @@ function App(){
 
     return(
         <>
+            <h1>this is edited by someone</h1>
           <BrowserRouter>
                 <Link to='/home'>Home</Link>
                 <Link to='/veg'>Veg</Link>
