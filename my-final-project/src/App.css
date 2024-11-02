@@ -1,0 +1,112 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* General link styling */
+a {
+  text-decoration: none;
+  color: #2C3E50;                    /* Dark blue-gray */
+  font-family: 'Open Sans', sans-serif;
+  padding: 12px 20px;                 /* Padding for a larger clickable area */
+  display: inline-block;
+  border: 2px solid transparent;      /* Border for hover effect */
+  border-radius: 5px;                 /* Rounded corners */
+  transition: color 0.3s ease, 
+              background-color 0.3s ease, 
+              border-color 0.3s ease;
+  font-weight: 600;                   /* Slightly bold text */
+}
+
+/* Hover effect for the links */
+a:hover {
+  color: #ffffff;
+  background-color: #E74C3C;          /* Red for hover effect */
+  border-color: #E74C3C;              /* Border matches background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Active link styling */
+a:active {
+  background-color: #C0392B;          /* Darker red on click */
+  color: #f8f8f8;
+  box-shadow: none;                   /* Remove shadow on click */
+}
+
+/* Spacing between links */
+a + a {
+  margin-left: 20px;
+}
+
+/* Specific colors for different sections */
+a[href='/home'] {
+  background-color: #2980B9;          /* Blue for Home */
+  color: #ffffff;
+}
+
+a[href='/veg'] {
+  background-color: #27AE60;          /* Green for Veg */
+  color: #ffffff;
+}
+
+a[href='/nonveg'] {
+  background-color: #E67E22;          /* Orange for Non-Veg */
+  color: #ffffff;
+}
+
+a[href='/cart'] {
+  background-color: #8E44AD;          /* Purple for Cart */
+  color: #ffffff;
+}
+
+a[href='/purchasedhistory'] {
+  background-color: #34495E;          /* Dark blue-gray for Purchase History */
+  color: #ffffff;
+}
+
+a[href='/aboutus'] {
+  background-color: #F39C12;          /* Yellow for About Us */
+  color: #ffffff;
+}
+
+a[href='/contactus'] {
+  background-color: #16A085;          /* Teal for Contact Us */
+  color: #ffffff;
+}
